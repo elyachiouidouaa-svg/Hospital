@@ -18,7 +18,17 @@ Elle utilise **JPA** et **Hibernate** pour le mapping objet-relationnel (ORM) et
 - Maven  
 - Base de données (H2/MySQL selon la configuration)
 
-## Lancement de l'application
+## Déroulement de l'application
+
+Au début du projet, nous avons créé les **entités principales** de l'application :  
+- **Patient**  
+- **Médecin**  
+- **Rendez-vous**  
+- **Consultation**  
+
+Chaque entité a été définie avec ses attributs et ses relations afin de représenter correctement le modèle de données d'un hôpital.
+
+Ensuite, nous avons créé les **repositories** correspondants pour chaque entité en utilisant **Spring Data JPA**, ce qui permet de gérer facilement les opérations **CRUD** (création, lecture, mise à jour et suppression) sur la base de données.
 
    ```bash
    git clone https://github.com/elyachiouidouaa-svg/Hospital.git
